@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
-    "build": "node index.js",
+    "build": "docker build -t head-or-tail-api .",
+    "run": "docker run -p 3000:3000 head-or-tail-api",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
